@@ -1,10 +1,2 @@
 #!/bin/bash
-
-# Escaping the special characters in the file name
-file_name=$(echo "\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)")
-
-# Creating the file with the specified contents
-echo "Best School" > "$file_name"
-
-echo "File created: $file_name"
-
+ echo "Best School" > \\\*\\\\"'\"Best School\"\\'"\\\\\*\$\\\?\\\*\\\*\\\*\\\*\\\*\:\)
